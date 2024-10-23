@@ -1,0 +1,22 @@
+<form action=""  method="POST"    enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" id="namee" name="name" value="{{v.name}}">
+    <label for="namee">Name</label>
+    
+    <input type="email" id="email" name="emaill" value="{{v.email}}">
+    <label for="email">Email</label>
+
+    <input type="number" id="age" name="agee" value="{{v.age}}">
+    <label for="age">Age</label>
+
+    <input type="text" id="gender" name="genderr" value="{{v.gender}}">
+    <label for="gender">Gender</label>
+
+    <input type="text" id="qual"  name="quall" value="{{v.qualification}}">
+    <label for="qual">Qualification</label>
+
+    <input type="file" id="fil" name="fill" >
+    <label for="fil"></label>
+
+    <button type="submit">student</button>
+</form>
