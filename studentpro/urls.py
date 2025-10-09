@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
 
-    path('student/',views.student_form,name='form'),
+    path('',views.student_form,name='form'),
     path('delete/<id>',views.del_view),
     path('edit/<id>',views.edit_view),
 
